@@ -1,12 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Quicksand', sans-serif;
 }
 header{
     color: white;
     background: linear-gradient(180deg, #412877 0%, #2A0666 100%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+header p{
+    font-size: x-large;
+}
+
+.headertxt{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.headerimg {
+    text-align: end;
+}
+
+header img{
+    width: 60vh;
 }
 header h1{
+    font-size: 5.2em;
     font-family: 'Pacifico', cursive;
 }
