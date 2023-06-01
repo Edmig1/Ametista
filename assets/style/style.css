@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    color: white;
+    background: linear-gradient(180deg, #412877 0%, #2A0666 100%);
+}
+header h1{
+    font-family: 'Pacifico', cursive;
+}
