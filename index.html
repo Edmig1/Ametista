@@ -25,6 +25,7 @@
           animation:pathAnim-0 4s;
           animation-timing-function: linear;
           animation-iteration-count: infinite;
+          background-color: #F7F7F7;
         }
         @keyframes pathAnim-0{
           0%{
@@ -88,10 +89,58 @@
           }
         }</style><defs><linearGradient id="gradient" x1="49%" y1="0%" x2="51%" y2="100%"><stop offset="5%" stop-color="#412877"></stop><stop offset="95%" stop-color="#2a0666"></stop></linearGradient></defs><path d="M 0,400 C 0,400 0,300 0,300 C 51.141025641025635,313.9923076923077 102.28205128205127,327.9846153846153 195,323 C 287.71794871794873,318.0153846153847 422.01282051282055,294.05384615384617 501,296 C 579.9871794871794,297.94615384615383 603.6666666666666,325.79999999999995 678,322 C 752.3333333333334,318.20000000000005 877.3205128205127,282.74615384615385 973,271 C 1068.6794871794873,259.25384615384615 1135.0512820512822,271.2153846153846 1208,280 C 1280.9487179487178,288.7846153846154 1360.474358974359,294.39230769230767 1440,300 C 1440,300 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-2" transform="rotate(-180 720 200)"></path></svg>
     <main>
-
+      <section class="sobre">
+        <h2 class="titulo">"Transformando escolas em refúgios de paz."</h2>
+        <p class="texto">Olá, Somos a Ametista, uma empresa que foca todas suas energias em garantir a segurança das crianças do nosso país. Por meio de projetos, sistemas de segurança, e incentivos, para então, amenizar a preocupante situação com os frequentes ataques nas escolas brasileiras.</p>  
+      </section>
+      <section class="servicos">
+        <h2 class="titulo">Serviços oferecidos</h2>
+        <div class="servgrid">
+          <div class="servico">
+            <p class="amarelo">Serviços de reconpensas</p>
+            <i class="fa-solid fa-award" style="color: #fdc500;"></i>
+          </div>
+          <div class="servico">
+            <p class="amarelo">Emocionômetro</p>
+            <i class="fa-solid fa-chart-pie" style="color: #fdc500;"></i>
+          </div>
+          <div class="servico">
+            <p class="amarelo">Fotos motivadoras</p>
+            <i class="fa-solid fa-camera" style="color: #fdc500;"></i>
+          </div>
+        </div>
+      </section>
+      <section class="conta">
+        <h3 class="titulo">Serviços oferecidos</h3>
+        <form action="" id="form">
+          <div>
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" autocomplete="off" required>
+          </div>
+          <div>
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" required>
+          </div>
+          <div class="divb">
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </section>
+      <div class="popup" id="popup">
+        <button class="fechar" onclick="fechar(this)">X</button>
+        <h2 class="bemvindo">Bem Vindo</h2>
+        <div class="popgrid">
+          <div class="popimg">
+            <svg viewBox="0 0 36 36" fill="none" role="img" xmlns="http://www.w3.org/2000/svg" width="80" height="80"><title>Sojourner Truth</title><mask id="mask__beam" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36"><rect width="36" height="36" rx="72" fill="#FFFFFF"></rect></mask><g mask="url(#mask__beam)"><rect width="36" height="36" fill="#f0a830"></rect><rect x="0" y="0" width="36" height="36" transform="translate(6 -2) rotate(296 18 18) scale(1.2)" fill="#fcebb6" rx="6"></rect><g transform="translate(0 -4) rotate(6 18 18)"><path d="M15 21c2 1 4 1 6 0" stroke="#000000" fill="none" stroke-linecap="round"></path><rect x="13" y="14" width="1.5" height="2" rx="1" stroke="none" fill="#000000"></rect><rect x="21" y="14" width="1.5" height="2" rx="1" stroke="none" fill="#000000"></rect></g></g></svg>
+          </div>
+          <div class="poptxt">
+            <p id="popnome">Nome: </p>
+          </div>
+        </div>
+      </div>
+      <div class="escuro" id="escuro"></div>
     </main>
-    <footer>
-
-    </footer>
+    <script src="assets/script/script.js"></script>
+    <script src="https://kit.fontawesome.com/9879f90344.js" crossorigin="anonymous"></script>
 </body>
 </html>

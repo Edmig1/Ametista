@@ -1,5 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #613c97 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #613c97;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -33,4 +56,168 @@ header img{
 header h1{
     font-size: 5.2em;
     font-family: 'Pacifico', cursive;
+}
+
+body {
+    background-color: #F7F7F7;
+}
+
+.sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3em;
+}
+
+.titulo{
+    font-size: xx-large;
+    font-family: 'Pacifico', cursive;
+    margin: 2em;
+}
+
+.texto{
+    font-size: large;
+    text-align: justify;
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+}
+.servicos{
+    text-align: center;
+}
+.servgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: space-around;
+    gap: 100px;
+    margin: 20px;
+    padding-bottom: 100px;
+}
+.servico{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 6px 8px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+}
+.servico:hover{
+    scale: 1.1;
+    transition: 0.3s ease-in-out;
+}
+.servico p{
+    background-color: #fdc60034;
+    color: #fdc500;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px ;
+}
+.servico i{
+    font-size: 80px;
+}
+.conta{
+    background: linear-gradient(180deg, #412877 0%, #2A0666 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.conta form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form label{
+    display: block;
+    margin: 10px 0px;
+}
+.conta form input{
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.25);
+    width: 350px;
+}
+.divb{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.divb button{
+    width: 60%;
+    padding: 6px 0px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: rgb(255, 252, 252);
+    background-color: #fdc500;
+    transition: 0.2s ease-in-out;
+}
+.divb button:hover{
+    background-color: rgb(234, 189, 26);
+    box-shadow: 0px 3px  rgb(255, 255, 255);
+    transition: 0.2s ease-in-out;
+}
+.escuro{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.29);
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.popup{
+    position: fixed;
+    z-index: 2;
+    display: none;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 30vw;
+    background: white;
+    text-align: center;
+    border-radius: 0px 0px 30px 30px;
+    transition: 1s ease-in-out;
+    box-shadow: 6px 8px 10px rgba(0, 0, 0, 0.25);
+}
+.popgrid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.popimg svg{
+    width: 100%;
+}
+.poptxt{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bolder;
+}
+.fechar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 8px;
+    background: red;
+    color: white;
+    height: 20px;
+    width: 20px;
+    border: none;
+    border-radius: 50%;
+}
+.bemvindo{
+    font-family: 'Pacifico', cursive;
+    color: #fdc500;
 }
